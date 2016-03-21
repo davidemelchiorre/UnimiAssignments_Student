@@ -4,5 +4,5 @@ import subprocess
 print("Inserisci codice di installazione:")
 username=raw_input()
 
-subprocess.call("git clone C:\\Users\\Davide\\Desktop\\unimi\\students\\"+username+"\\bare.git Personali",shell=True)
-subprocess.call("git clone C:\\Users\\Davide\\Desktop\\unimi\\public_notebooks Esercitazioni",shell=True)
+subprocess.call("git clone https://localhost/rep",shell=True)
+
