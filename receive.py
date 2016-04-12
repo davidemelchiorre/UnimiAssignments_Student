@@ -16,7 +16,7 @@ for corso in sys.argv[1:]:
         subprocess.call("cd Esercitazioni/"+corso+" && git reset --hard && git pull",shell=True)
     else:
         print("Downloading "+corso)
-        subprocess.call("cd Esercitazioni && git clone C:/inetpub/wwwroot/UnimiAssignments/public_notebooks/"+corso,shell=True)
+        subprocess.call("cd Esercitazioni && git clone http://localhost/UnimiAssignments/public_notebooks/"+corso,shell=True)
 
 subprocess.call("cd Personali && git reset --hard && git pull",shell=True)
 
