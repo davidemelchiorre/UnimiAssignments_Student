@@ -50,7 +50,7 @@ def get():
     tmp="python receive.py "
     for corso in comando.split(" ")[1:]:
         tmp+=corso+" "
-    print corso
+    print tmp
     #subprocess.call(tmp, shell=True)
     subprocess.call('cd Esercitazioni && ls -l', shell=True)
     print "cloned into Esercitazioni"
