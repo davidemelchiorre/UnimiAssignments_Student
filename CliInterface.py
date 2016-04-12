@@ -47,9 +47,11 @@ def get():
     print ""
     print "--------------Getting Notebooks----------------"
     print "Cloning into Esercitazioni..."
+    tmp="python receive.py "
     for corso in comando.split(" ")[1:]:
-        print corso
-    #subprocess.call('rm -r Esercitazioni', shell=True)
+        tmp+=corso+" "
+    print corso
+    #subprocess.call(tmp, shell=True)
     subprocess.call('cd Esercitazioni && ls -l', shell=True)
     print "cloned into Esercitazioni"
     print "-----------------------------------------------"
